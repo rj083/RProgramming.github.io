@@ -1,0 +1,631 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.Tutorial, li.Tutorial, div.Tutorial
+	{mso-style-name:Tutorial;
+	mso-style-link:"Tutorial Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:11.0pt;
+	font-family:"Verdana",sans-serif;}
+span.TutorialChar
+	{mso-style-name:"Tutorial Char";
+	mso-style-link:Tutorial;
+	font-family:"Verdana",sans-serif;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.com
+	{mso-style-name:com;}
+span.pln
+	{mso-style-name:pln;}
+span.pun
+	{mso-style-name:pun;}
+span.str
+	{mso-style-name:str;}
+span.kwd
+	{mso-style-name:kwd;}
+.MsoChpDefault
+	{font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The
+Logistic Regression is a regression model in which the response variable
+(dependent variable) has categorical values such as True/False or 0/1. It
+actually measures the probability of a binary response as the value of response
+variable based on the mathematical equation relating it with the predictor
+variables.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The
+general mathematical equation for logistic regression is –</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+5.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>y = 1/(1+e^-(a+b1x1+b2x2+b3x3+...))</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+5.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Following
+is the description of the parameters used &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:18.0pt;text-indent:-18.0pt;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>y</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;is the response variable.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:18.0pt;text-indent:-18.0pt;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>x</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;is the predictor variable.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:18.0pt;text-indent:-18.0pt;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>a</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;and&nbsp;<b>b</b>&nbsp;are
+the coefficients which are numeric constants.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+5.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The
+function used to create the regression model is the&nbsp;<b>glm()</b>&nbsp;function.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+7.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The basic
+syntax for&nbsp;<b>glm()</b>&nbsp;function in logistic regression is &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>glm(formula,data,family)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+6.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Following
+is the description of the parameters used &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:18.0pt;text-indent:-18.0pt;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>formula</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;is the symbol presenting
+the relationship between the variables.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:18.0pt;text-indent:-18.0pt;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>data</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;is the data set giving the
+values of these variables.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:18.0pt;text-indent:-18.0pt;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>family</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;is R object to specify the
+details of the model. It's value is binomial for logistic regression.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:18.0pt;line-height:200%'><span style='font-size:9.0pt;line-height:
+200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Example</span></b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The
+in-built data set &quot;mtcars&quot; describes different models of a car with
+their various engine specifications. In &quot;mtcars&quot; data set, the
+transmission mode (automatic or manual) is described by the column am which is
+a binary value (0 or 1). We can create a logistic regression model between the
+columns &quot;am&quot; and 3 other columns - hp, wt and cyl.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Select some columns form mtcars.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>input </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+mtcars</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>[,</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>c</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;am&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;cyl&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;hp&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;wt&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)]</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>head</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>input</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>))</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>                  am   cyl  hp    wt</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Mazda RX4          1   6    110   2.620</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Mazda RX4 Wag      1   6    110   2.875</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Datsun 710         1   4     93   2.320</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Hornet 4 Drive     0   6    110   3.215</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Hornet Sportabout  0   8    175   3.440</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Valiant            0   6    105   3.460</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C;letter-spacing:-.75pt'>Create Regression Model</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:7.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>We use
+the&nbsp;<b>glm()</b>&nbsp;function to create the regression model and get its
+summary for analysis.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>input </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+mtcars</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>[,</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>c</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;am&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;cyl&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;hp&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;wt&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)]</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>am</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>data
+</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> glm</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>formula
+</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> am </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>~</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+cyl </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>+</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> hp </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>+</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> wt</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+data </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> input</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+family </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> binomial</span><span style='font-size:
+8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>summary</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>am</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>data</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>))</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Call:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>glm(formula = am ~ cyl + hp + wt, family =
+binomial, data = input)</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Deviance Residuals: </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>     Min        1Q      Median       
+3Q       Max  </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>-2.17272     -0.14907  -0.01464    
+0.14116   1.27641  </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Coefficients:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>            Estimate Std. Error z value
+Pr(&gt;|z|)  </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>(Intercept) 19.70288    8.11637   2.428  
+0.0152 *</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>cyl          0.48760    1.07162   0.455  
+0.6491  </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>hp           0.03259    0.01886   1.728  
+0.0840 .</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>wt          -9.14947    4.15332  -2.203  
+0.0276 *</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>---</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’
+0.05 ‘.’ 0.1 ‘ ’ 1</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>(Dispersion parameter for binomial family
+taken to be 1)</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>    Null deviance: 43.2297  on 31  degrees
+of freedom</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Residual deviance:  9.8415  on 28  degrees
+of freedom</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>AIC: 17.841</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Number of Fisher Scoring iterations: 8</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:1.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><b><span
+style='font-size:12.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C'>Conclusion</span></b></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><b><span
+style='font-size:5.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>In the
+summary as the p-value in the last column is more than 0.05 for the variables
+&quot;cyl&quot; and &quot;hp&quot;, we consider them to be insignificant in
+contributing to the value of the variable &quot;am&quot;. Only weight (wt)
+impacts the &quot;am&quot; value in this regression model.</span></p>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%'>&nbsp;</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

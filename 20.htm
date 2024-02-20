@@ -1,0 +1,1432 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.Tutorial, li.Tutorial, div.Tutorial
+	{mso-style-name:Tutorial;
+	mso-style-link:"Tutorial Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:11.0pt;
+	font-family:"Verdana",sans-serif;}
+span.TutorialChar
+	{mso-style-name:"Tutorial Char";
+	mso-style-link:Tutorial;
+	font-family:"Verdana",sans-serif;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.com
+	{mso-style-name:com;}
+span.pln
+	{mso-style-name:pln;}
+span.kwd
+	{mso-style-name:kwd;}
+span.pun
+	{mso-style-name:pun;}
+span.str
+	{mso-style-name:str;}
+span.lit
+	{mso-style-name:lit;}
+span.typ
+	{mso-style-name:typ;}
+.MsoChpDefault
+	{font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>In R, we
+can read data from files stored outside the R environment. We can also write
+data into files which will be stored and accessed by the operating system. R
+can read and write into various file formats like csv, excel, xml etc.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>In this
+chapter we will learn to read data from a csv file and then write data into a
+csv file. The file should be present in current working directory so that R can
+read it. Of course we can also set our own directory and read files from there.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C;letter-spacing:-.75pt'>Getting and Setting the Working Directory</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:4.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>You can
+check which directory the R workspace is pointing to using the&nbsp;<b>getwd()</b>&nbsp;function.
+You can also set a new working directory using&nbsp;<b>setwd()</b>function.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Get and print current working directory.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>getwd</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>())</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Set current working directory.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>setwd</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;/web/com&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Get and print current working directory.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>getwd</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>())</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>[1] &quot;/web/com/1441086124_2016&quot;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>[1] &quot;/web/com&quot;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>This
+result depends on your OS and your current directory where you are working.</span></p>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:2.4pt;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-bottom:7.2pt;text-align:justify;line-height:
+200%;border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C;letter-spacing:-.75pt'>Input as CSV File</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+5.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+5.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The csv
+file is a text file in which the values in the columns are separated by a
+comma. Let's consider the following data present in the file named&nbsp;<b>input.csv</b>.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>You can
+create this file using windows notepad by copying and pasting this data. Save
+the file as&nbsp;<b>input.csv</b>&nbsp;using the save As All files(*.*) option
+in notepad.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>id</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>name</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>salary</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>start_date</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>dept</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#006666'>1</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Rick</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>623.3</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>2012</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>01</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>01</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>IT</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#006666'>2</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Dan</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>515.2</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>2013</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>09</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>23</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Operations</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#006666'>3</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Michelle</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>611</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>2014</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>11</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>15</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>IT</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#006666'>4</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Ryan</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>729</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>2014</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>05</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>11</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>HR</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#006666'>5</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Gary</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>843.25</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>2015</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>03</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>27</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Finance</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#006666'>6</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Nina</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>578</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>2013</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>05</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>21</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>IT</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#006666'>7</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Simon</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>632.8</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>2013</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>07</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>30</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Operations</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#006666'>8</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Guru</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>722.5</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>2014</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>06</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>17</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Finance</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C;letter-spacing:-.75pt'>Reading a CSV File</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Following
+is a simple example of&nbsp;<b>read.csv()</b>&nbsp;function to read a CSV file
+available in your current working directory –</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+read</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>csv</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>data</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<p class=MsoNormal align=center style='margin-top:2.4pt;margin-right:2.4pt;
+margin-bottom:2.4pt;margin-left:0cm;text-align:center;line-height:200%'><img
+width=302 height=204 id="Picture 1" src="1_files/image001.png"></p>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C;letter-spacing:-.75pt'>Analyzing the CSV File</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:7.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>By
+default the&nbsp;<b>read.csv()</b>&nbsp;function gives the output as a data
+frame. This can be easily checked as follows. Also we can check the number of
+columns and rows.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+read</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>csv</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#000088'>is</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>data</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>frame</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>data</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>))</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>ncol</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>data</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>))</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>nrow</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>data</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>))</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>[1] TRUE</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>[1] 5</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>[1] 8</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Once we
+read data in a data frame, we can apply all the functions applicable to data
+frames as explained in subsequent section.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C'>Get the
+maximum salary</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Create a data frame.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+read</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>csv</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Get the max salary from data frame.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>sal </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+max</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data$salary</span><span style='font-size:
+8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>sal</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>[1] 843.25</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><b><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C'>Get the
+details of the person with max salary</span></b></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><b><span
+style='font-size:2.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>We can
+fetch rows meeting specific filter criteria similar to a SQL where clause.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Create a data frame.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+read</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>csv</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Get the max salary from data frame.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>sal </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+max</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data$salary</span><span style='font-size:
+8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Get the person detail having max salary.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>retval </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+subset</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+salary </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>==</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> max</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>salary</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>))</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>retval</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>      id    name  salary  start_date   
+dept</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>5     NA    Gary  843.25  2015-03-27    Finance</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C'>Get all the people working in IT department</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Create a data frame.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+read</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>csv</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>retval </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+subset</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> data</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+dept </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>==</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>&quot;IT&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>retval</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>       id   name      salary   start_date  
+dept</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>1      1    Rick      623.3    2012-01-01  
+IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>3      3    Michelle  611.0    2014-11-15  
+IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>6      6    Nina      578.0    2013-05-21  
+IT</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='line-height:200%;
+font-family:"Verdana",sans-serif;color:#843C0C'>Get the persons in IT
+department whose salary is greater than 600</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Create a data frame.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+read</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>csv</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>info </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+subset</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+salary </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>&gt;</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#006666'>600</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>&amp;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+dept </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>==</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>&quot;IT&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>info</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>       id   name      salary   start_date  
+dept</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>1      1    Rick      623.3    2012-01-01  
+IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>3      3    Michelle  611.0    2014-11-15  
+IT</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C'>Get the
+people who joined on or after 2014</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:4.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Create a data frame.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+read</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>csv</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>retval </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+subset</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#000088'>as</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Date</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>start_date</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>&gt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#000088'>as</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Date</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;2014-01-01&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>))</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>retval</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>       id   name     salary   start_date   
+dept</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>3      3    Michelle 611.00   2014-11-15   
+IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>4      4    Ryan     729.00   2014-05-11   
+HR</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>5     NA    Gary     843.25   2015-03-27   
+Finance</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>8      8    Guru     722.50   2014-06-17   
+Finance</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>Writing into a CSV File</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>R can
+create csv file form existing data frame. The&nbsp;<b>write.csv()</b>&nbsp;function
+is used to create the csv file. This file gets created in the working
+directory.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Create a data frame.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+read</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>csv</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>retval </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+subset</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#000088'>as</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Date</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>start_date</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>&gt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#000088'>as</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Date</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;2014-01-01&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>))</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Write filtered data into a new file.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>write</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>csv</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>retval</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;output.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>newdata </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+read</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>csv</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;output.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>newdata</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>  X      id   name      salary  
+start_date    dept</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>1 3      3    Michelle  611.00  
+2014-11-15    IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>2 4      4    Ryan      729.00  
+2014-05-11    HR</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>3 5     NA    Gary      843.25  
+2015-03-27    Finance</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>4 8      8    Guru      722.50  
+2014-06-17    Finance</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+7.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Here the
+column X comes from the data set newper. This can be dropped using additional
+parameters while writing the file.</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Create a data frame.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+read</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>csv</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>retval </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+subset</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>data</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#000088'>as</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Date</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>start_date</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>&gt;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#000088'>as</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Date</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;2014-01-01&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>))</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Write filtered data into a new file.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>write</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>csv</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>retval</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;output.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+row</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>names </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+FALSE</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>newdata </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+read</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>csv</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;output.csv&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>newdata</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>      id    name      salary  
+start_date    dept</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>1      3    Michelle  611.00  
+2014-11-15    IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>2      4    Ryan      729.00  
+2014-05-11    HR</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>3     NA    Gary      843.25  
+2015-03-27    Finance</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>4      8    Guru      722.50  
+2014-06-17    Finance</span></p>
+
+</div>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:9.0pt;line-height:200%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

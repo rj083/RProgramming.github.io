@@ -1,0 +1,667 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.Tutorial, li.Tutorial, div.Tutorial
+	{mso-style-name:Tutorial;
+	mso-style-link:"Tutorial Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:11.0pt;
+	font-family:"Verdana",sans-serif;}
+span.TutorialChar
+	{mso-style-name:"Tutorial Char";
+	mso-style-link:Tutorial;
+	font-family:"Verdana",sans-serif;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.pun
+	{mso-style-name:pun;}
+span.pln
+	{mso-style-name:pln;}
+span.str
+	{mso-style-name:str;}
+span.com
+	{mso-style-name:com;}
+span.kwd
+	{mso-style-name:kwd;}
+.MsoChpDefault
+	{font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>JSON file
+stores data as text in human-readable format. Json stands for JavaScript Object
+Notation. R can read JSON files using the rjson package.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#C00000;letter-spacing:
+-.75pt'>Install rjson Package</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+5.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>In the R
+console, you can issue the following command to install the rjson package.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+5.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>install.packages(&quot;rjson&quot;)</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;line-height:200%;border:none;padding:0cm'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#C00000;letter-spacing:
+-.75pt'>Input Data</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Create a
+JSON file by copying the below data into a text editor like notepad. Save the
+file with a&nbsp;<b>.json</b>&nbsp;extension and choosing the file type
+as&nbsp;<b>all files(*.*)</b>.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+2.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:115%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:115%;font-family:Consolas;
+color:#666600'>{</span><span style='font-size:6.0pt;line-height:115%;
+font-family:Consolas;color:#313131'> </span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:115%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:115%;font-family:Consolas;
+color:#313131'>   </span><span style='font-size:6.0pt;line-height:115%;
+font-family:Consolas;color:#008800'>&quot;ID&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>:[</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;1&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;2&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;3&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;4&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;5&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;6&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;7&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;8&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>],</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:115%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:115%;font-family:Consolas;
+color:#313131'>   </span><span style='font-size:6.0pt;line-height:115%;
+font-family:Consolas;color:#008800'>&quot;Name&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>:[</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;Rick&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;Dan&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;Michelle&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;Ryan&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;Gary&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;Nina&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;Simon&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;Guru&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>],</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:115%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:115%;font-family:Consolas;
+color:#313131'>   </span><span style='font-size:6.0pt;line-height:115%;
+font-family:Consolas;color:#008800'>&quot;Salary&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>:[</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;623.3&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;515.2&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;611&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;729&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;843.25&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;578&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;632.8&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;722.5&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>],</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:115%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:115%;font-family:Consolas;
+color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:115%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:115%;font-family:Consolas;
+color:#313131'>   </span><span style='font-size:6.0pt;line-height:115%;
+font-family:Consolas;color:#008800'>&quot;StartDate&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>:[</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;1/1/2012&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;9/23/2013&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;11/15/2014&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;5/11/2014&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;3/27/2015&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;5/21/2013&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:115%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:115%;font-family:Consolas;
+color:#313131'>      </span><span style='font-size:6.0pt;line-height:115%;
+font-family:Consolas;color:#008800'>&quot;7/30/2013&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;6/17/2014&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>],</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:115%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:115%;font-family:Consolas;
+color:#313131'>   </span><span style='font-size:6.0pt;line-height:115%;
+font-family:Consolas;color:#008800'>&quot;Dept&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>:[</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;IT&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;Operations&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;IT&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;HR&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;Finance&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;IT&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;Operations&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#008800'>&quot;Finance&quot;</span><span
+style='font-size:6.0pt;line-height:115%;font-family:Consolas;color:#666600'>]</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:115%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:115%;font-family:Consolas;
+color:#666600'>}</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;line-height:200%;border:none;padding:0cm'><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#121214;
+letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#C00000;letter-spacing:
+-.75pt'>Read the JSON File</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:7.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#C00000;letter-spacing:
+-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The JSON
+file is read by R using the function from&nbsp;<b>JSON()</b>. It is stored as a
+list in R.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># Load the package required to read JSON files.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>library</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>&quot;rjson&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># Give the input file name to the function.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>result </span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>&lt;-</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'> fromJSON</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>file
+</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>&quot;input.json&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># Print the result.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#000088'>print</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>result</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>$ID</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>[1] &quot;1&quot;   &quot;2&quot;   &quot;3&quot;  
+&quot;4&quot;   &quot;5&quot;   &quot;6&quot;   &quot;7&quot;   &quot;8&quot;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>$Name</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>[1] &quot;Rick&quot;     &quot;Dan&quot;     
+&quot;Michelle&quot; &quot;Ryan&quot;     &quot;Gary&quot;    
+&quot;Nina&quot;     &quot;Simon&quot;    &quot;Guru&quot;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>$Salary</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>[1] &quot;623.3&quot;  &quot;515.2&quot;  &quot;611&quot;    &quot;729&quot;   
+&quot;843.25&quot; &quot;578&quot;    &quot;632.8&quot;  &quot;722.5&quot;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>$StartDate</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>[1] &quot;1/1/2012&quot;   &quot;9/23/2013&quot; 
+&quot;11/15/2014&quot; &quot;5/11/2014&quot;  &quot;3/27/2015&quot; 
+&quot;5/21/2013&quot;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>   &quot;7/30/2013&quot;  &quot;6/17/2014&quot;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>$Dept</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>[1] &quot;IT&quot;         &quot;Operations&quot;
+&quot;IT&quot;         &quot;HR&quot;         &quot;Finance&quot;   
+&quot;IT&quot;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>   &quot;Operations&quot; &quot;Finance&quot;</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;line-height:200%;border:none;padding:0cm'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#C00000;letter-spacing:
+-.75pt'>Convert JSON to a Data Frame</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#C00000;letter-spacing:
+-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>We can
+convert the extracted data above to a R data frame for further analysis using
+the&nbsp;<b>as.data.frame()</b>&nbsp;function.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># Load the package required to read JSON files.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>library</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>&quot;rjson&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># Give the input file name to the function.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>result </span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>&lt;-</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'> fromJSON</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>file
+</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>&quot;input.json&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># Convert JSON file to a data frame.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>json_data_frame </span><span style='font-size:8.0pt;line-height:
+200%;font-family:Consolas;color:#666600'>&lt;-</span><span style='font-size:
+8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#000088'>as</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>data</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>frame</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>result</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#000088'>print</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>json_data_frame</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>      id,   name,    salary,   start_date,     dept</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>1      1    Rick     623.30    2012-01-01      IT</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>2      2    Dan      515.20    2013-09-23      Operations</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>3      3    Michelle 611.00    2014-11-15      IT</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>4      4    Ryan     729.00    2014-05-11      HR</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>5     NA    Gary     843.25    2015-03-27      Finance</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>6      6    Nina     578.00    2013-05-21      IT</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>7      7    Simon    632.80    2013-07-30      Operations</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>8      8    Guru     722.50    2014-06-17      Finance</span></p>
+
+</div>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:9.0pt;
+line-height:200%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

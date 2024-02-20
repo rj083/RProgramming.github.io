@@ -1,0 +1,1547 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.Tutorial, li.Tutorial, div.Tutorial
+	{mso-style-name:Tutorial;
+	mso-style-link:"Tutorial Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:11.0pt;
+	font-family:"Verdana",sans-serif;}
+span.TutorialChar
+	{mso-style-name:"Tutorial Char";
+	mso-style-link:Tutorial;
+	font-family:"Verdana",sans-serif;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.tag
+	{mso-style-name:tag;}
+span.pln
+	{mso-style-name:pln;}
+span.com
+	{mso-style-name:com;}
+span.pun
+	{mso-style-name:pun;}
+span.str
+	{mso-style-name:str;}
+span.kwd
+	{mso-style-name:kwd;}
+span.lit
+	{mso-style-name:lit;}
+.MsoChpDefault
+	{font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>XML is a
+file format which shares both the file format and the data on the World Wide
+Web, intranets, and elsewhere using standard ASCII text. It stands for
+Extensible Markup Language (XML). Similar to HTML it contains markup tags. But
+unlike HTML where the markup tag describes structure of the page, in xml the
+markup tags describe the meaning of the data contained into he file.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>You can
+read a xml file in R using the &quot;XML&quot; package. This package can be
+installed using following command.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>install.packages(&quot;XML&quot;)</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#121214;
+letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000;letter-spacing:-.75pt'>Input Data</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+6.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Create a
+XMl file by copying the below data into a text editor like notepad. Save the
+file with a&nbsp;<b>.xml</b>&nbsp;extension and choosing the file type as&nbsp;<b>all
+files(*.*)</b>.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;RECORDS&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;ID&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>1</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/ID&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;NAME&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>Rick</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/NAME&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;SALARY&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>623.3</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/SALARY&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;STARTDATE&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>1/1/2012</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/STARTDATE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;DEPT&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>IT</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/DEPT&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>            </span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;ID&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>2</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/ID&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;NAME&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>Dan</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/NAME&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;SALARY&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>515.2</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/SALARY&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;STARTDATE&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>9/23/2013</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/STARTDATE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;DEPT&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>Operations</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/DEPT&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;ID&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>3</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/ID&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;NAME&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>Michelle</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/NAME&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;SALARY&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>611</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/SALARY&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;STARTDATE&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>11/15/2014</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/STARTDATE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;DEPT&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>IT</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/DEPT&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;ID&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>4</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/ID&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;NAME&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>Ryan</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/NAME&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;SALARY&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>729</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/SALARY&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;STARTDATE&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>5/11/2014</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/STARTDATE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;DEPT&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>HR</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/DEPT&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;ID&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>5</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/ID&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;NAME&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>Gary</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/NAME&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;SALARY&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>843.25</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/SALARY&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;STARTDATE&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>3/27/2015</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/STARTDATE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;DEPT&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>Finance</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/DEPT&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;ID&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>6</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/ID&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;NAME&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>Nina</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/NAME&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;SALARY&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>578</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/SALARY&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;STARTDATE&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>5/21/2013</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/STARTDATE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;DEPT&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>IT</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/DEPT&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;ID&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>7</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/ID&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;NAME&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>Simon</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/NAME&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;SALARY&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>632.8</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/SALARY&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;STARTDATE&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>7/30/2013</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/STARTDATE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;DEPT&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>Operations</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/DEPT&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;ID&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>8</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/ID&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;NAME&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>Guru</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/NAME&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;SALARY&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>722.5</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/SALARY&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;STARTDATE&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>6/17/2014</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/STARTDATE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;DEPT&gt;</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#313131'>Finance</span><span
+style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/DEPT&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/EMPLOYEE&gt;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#313131'>            </span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:7.0pt;font-family:Consolas;color:#000088'>&lt;/RECORDS&gt;</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000;letter-spacing:-.75pt'>Reading XML File</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The xml
+file is read by R using the function&nbsp;<b>xmlParse()</b>. It is stored as a
+list in R.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Load the package required to read XML
+files.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;XML&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Also load the other required package.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;methods&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Give the input file name to the function.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>result </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+xmlParse</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>file </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.xml&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Print the result.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>result</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>1</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Rick</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>623.3</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>1/1/2012</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>2</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Dan</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>515.2</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>9/23/2013</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Operations</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>3</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Michelle</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>611</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>11/15/2014</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>4</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Ryan</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>729</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>5/11/2014</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>HR</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>5</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Gary</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>843.25</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>3/27/2015</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Finance</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>6</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Nina</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>578</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>5/21/2013</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>7</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Simon</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>632.8</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>7/30/2013</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Operations</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>8</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Guru</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>722.5</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>6/17/2014</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Finance</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#C00000'>Get Number of
+Nodes Present in XML File</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:6.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#C00000'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Load the packages required to read XML
+files.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;XML&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;methods&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Give the input file name to the function.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>result </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+xmlParse</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>file </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.xml&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Exract the root node form the xml file.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>rootnode </span><span style='font-size:
+8.0pt;line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+xmlRoot</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>result</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Find number of nodes in the root.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>rootsize </span><span style='font-size:
+8.0pt;line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+xmlSize</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>rootnode</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Print the result.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>rootsize</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>output</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>[1] 8</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000;letter-spacing:-.75pt'>Details of the First Node</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:5.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Let's
+look at the first record of the parsed file. It will give us an idea of the
+various elements present in the top level node.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+2.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Load the packages required to read XML
+files.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;XML&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;methods&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Give the input file name to the function.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>result </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+xmlParse</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>file </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.xml&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Exract the root node form the xml file.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>rootnode </span><span style='font-size:
+8.0pt;line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+xmlRoot</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>result</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Print the result.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>rootnode</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>])</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>$EMPLOYEE</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>   1</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>   Rick</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>   623.3</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>   1/1/2012</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>   IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>attr(,&quot;class&quot;)</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>[1] &quot;XMLInternalNodeList&quot;
+&quot;XMLNodeList&quot; </span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000'>Get Different Elements of a Node</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Load the packages required to read XML
+files.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;XML&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;methods&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Give the input file name to the function.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>result </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+xmlParse</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>file </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;input.xml&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Exract the root node form the xml file.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>rootnode </span><span style='font-size:
+8.0pt;line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+xmlRoot</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>result</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Get the first element of the first node.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>rootnode</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>[[</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>]][[</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>]])</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Get the fifth element of the first node.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>rootnode</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>[[</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>]][[</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>]])</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Get the second element of the third node.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>rootnode</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>[[</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>]][[</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>2</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>]])</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>1 </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>IT </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Michelle </span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000;letter-spacing:-.75pt'>XML to Data Frame</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:5.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#C00000;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>To handle
+the data effectively in large files we read the data in the xml file as a data
+frame. Then process the data frame for data analysis.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Load the packages required to read XML
+files.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;XML&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;methods&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Convert the input xml file to a data
+frame.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>xmldataframe </span><span style='font-size:
+8.0pt;line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+xmlToDataFrame</span><span style='font-size:8.0pt;line-height:200%;font-family:
+Consolas;color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#008800'>&quot;input.xml&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#000088'>print</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>xmldataframe</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>      ID    NAME     SALARY   
+STARTDATE       DEPT </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>1      1    Rick     623.30   
+2012-01-01      IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>2      2    Dan      515.20   
+2013-09-23      Operations</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>3      3    Michelle 611.00   
+2014-11-15      IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>4      4    Ryan     729.00   
+2014-05-11      HR</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>5     NA    Gary     843.25   
+2015-03-27      Finance</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>6      6    Nina     578.00    2013-05-21     
+IT</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>7      7    Simon    632.80   
+2013-07-30      Operations</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>8      8    Guru     722.50   
+2014-06-17      Finance</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>As the
+data is now available as a dataframe we can use data frame related function to
+read and manipulate the file.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%'><span
+style='font-size:9.0pt;line-height:200%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

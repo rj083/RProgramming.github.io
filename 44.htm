@@ -1,0 +1,568 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.Tutorial, li.Tutorial, div.Tutorial
+	{mso-style-name:Tutorial;
+	mso-style-link:"Tutorial Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:11.0pt;
+	font-family:"Verdana",sans-serif;}
+span.TutorialChar
+	{mso-style-name:"Tutorial Char";
+	mso-style-link:Tutorial;
+	font-family:"Verdana",sans-serif;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+.MsoChpDefault
+	{font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>In the
+random forest approach, a large number of decision trees are created. Every
+observation is fed into every decision tree. The most common outcome for each
+observation is used as the final output. A new observation is fed into all the
+trees and taking a majority vote for each classification model.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>An error
+estimate is made for the cases which were not used while building the tree.
+That is called an&nbsp;<b>OOB (Out-of-bag)</b>&nbsp;error estimate which is
+mentioned as a percentage.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The R
+package&nbsp;<b>&quot;randomForest&quot;</b>&nbsp;is used to create random
+forests.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:14.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#002060;letter-spacing:-.75pt'>Install R Package</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:2.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#002060;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Use the
+below command in R console to install the package. You also have to install the
+dependent packages if any.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>install.packages(&quot;randomForest)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The
+package &quot;randomForest&quot; has the function&nbsp;<b>randomForest()</b>&nbsp;which
+is used to create and analyze random forests.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The basic
+syntax for creating a random forest in R is –</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>randomForest(formula, data)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+7.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Following
+is the description of the parameters used &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:18.0pt;text-align:justify;text-indent:-18.0pt;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>formula</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;is a formula describing the
+predictor and response variables.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:18.0pt;text-align:justify;text-indent:-18.0pt;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><b><span
+style='font-size:9.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>data</span></b><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;is the name of the data set
+used.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Input Data</span></b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>We will
+use the R in-built data set named readingSkills to create a decision tree. It
+describes the score of someone's readingSkills if we know the variables
+&quot;age&quot;,&quot;shoesize&quot;,&quot;score&quot; and whether the person
+is a native speaker.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Here is
+the sample data.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'># Load the party package. It will
+automatically load other</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'># required packages.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library(party)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'># Print some records from data set
+readingSkills.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>print(head(readingSkills))</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result and chart &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>  nativeSpeaker   age   shoeSize      score</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>1           yes     5   24.83189   32.29385</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>2           yes     6   25.95238   36.63105</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>3            no    11   30.42170   49.60593</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>4           yes     7   28.66450   40.28456</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>5           yes    11   31.88207   55.46085</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>6           yes    10   30.07843   52.83124</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Loading required package: methods</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Loading required package: grid</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>...............................</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>...............................</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:8.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Example</span></b></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>We will
+use the&nbsp;<b>randomForest()</b>&nbsp;function to create the decision tree
+and see it's graph.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'># Load the party package. It will
+automatically load other</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'># required packages.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library(party)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>library(randomForest)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'># Create the forest.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>output.forest &lt;-
+randomForest(nativeSpeaker ~ age + shoeSize + score, </span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>           data = readingSkills)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'># View the forest results.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>print(output.forest) </span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'># Importance of each predictor.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>print(importance(fit,type = 2)) </span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Call:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> randomForest(formula = nativeSpeaker ~ age
++ shoeSize + score,     </span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>                 data = readingSkills)</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>               Type of random forest:
+classification</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>                     Number of trees: 500</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>No. of variables tried at each split: 1</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>        OOB estimate of  error rate: 1%</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>Confusion matrix:</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>    no yes class.error</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>no  99   1        0.01</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>yes  1  99        0.01</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>         MeanDecreaseGini</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>age              13.95406</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>shoeSize         18.91006</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>score            56.73051</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:4.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Conclusion</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>From the
+random forest shown above we can conclude that the shoesize and score are the
+important factors deciding if someone is a native speaker or not. Also the
+model has only 1% error which means we can predict with 99% accuracy.</span></p>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;border:none;
+padding:0cm'><span style='font-size:9.0pt;line-height:200%;text-transform:uppercase'>&nbsp;</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

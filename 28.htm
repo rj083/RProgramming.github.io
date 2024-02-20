@@ -1,0 +1,846 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.Tutorial, li.Tutorial, div.Tutorial
+	{mso-style-name:Tutorial;
+	mso-style-link:"Tutorial Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:11.0pt;
+	font-family:"Verdana",sans-serif;}
+span.TutorialChar
+	{mso-style-name:"Tutorial Char";
+	mso-style-link:Tutorial;
+	font-family:"Verdana",sans-serif;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.com
+	{mso-style-name:com;}
+span.pln
+	{mso-style-name:pln;}
+span.pun
+	{mso-style-name:pun;}
+span.lit
+	{mso-style-name:lit;}
+span.str
+	{mso-style-name:str;}
+span.typ
+	{mso-style-name:typ;}
+.MsoChpDefault
+	{font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>A bar
+chart represents data in rectangular bars with length of the bar proportional
+to the value of the variable. R uses the function&nbsp;<b>barplot()</b>&nbsp;to
+create bar charts. R can draw both vertical and Horizontal bars in the bar
+chart. In bar chart each of the bars can be given different colors.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black;background:yellow'>Syntax</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+1.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The basic
+syntax to create a bar-chart in R is –</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+2.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>barplot(H,xlab,ylab,main, names.arg,col)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+5.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Following
+is the description of the parameters used &#8722;</span></p>
+
+<p class=MsoNormal style='margin-bottom:3.75pt;margin-left:18.0pt;text-indent:
+-18.0pt;line-height:200%'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Courier New";color:black'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>H</span></b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;is a
+vector or matrix containing numeric values used in bar chart.</span></p>
+
+<p class=MsoNormal style='margin-bottom:3.75pt;margin-left:18.0pt;text-indent:
+-18.0pt;line-height:200%'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Courier New";color:black'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>xlab</span></b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;is the
+label for x axis.</span></p>
+
+<p class=MsoNormal style='margin-bottom:3.75pt;margin-left:18.0pt;text-indent:
+-18.0pt;line-height:200%'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Courier New";color:black'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>ylab</span></b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;is the
+label for y axis.</span></p>
+
+<p class=MsoNormal style='margin-bottom:3.75pt;margin-left:18.0pt;text-indent:
+-18.0pt;line-height:200%'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Courier New";color:black'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>main</span></b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;is the
+title of the bar chart.</span></p>
+
+<p class=MsoNormal style='margin-bottom:3.75pt;margin-left:18.0pt;text-indent:
+-18.0pt;line-height:200%'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Courier New";color:black'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>names.arg</span></b><span style='font-size:
+9.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;is a
+vector of names appearing under each bar.</span></p>
+
+<p class=MsoNormal style='margin-bottom:3.75pt;margin-left:18.0pt;text-indent:
+-18.0pt;line-height:200%'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Courier New";color:black'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:9.0pt;line-height:200%;font-family:
+"Verdana",sans-serif;color:black'>col</span></b><span style='font-size:9.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;is used to
+give colors to the bars in the graph.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:12.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><b><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>Example</span></b></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:4.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>A simple
+bar chart is created using just the input vector and the name of each bar.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The below
+script will create and save the bar chart in the current R working directory.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+5.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Create the data for the chart</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>H </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> c</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>7</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>12</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>28</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>41</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Give the chart file a name</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>png</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>file
+</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>&quot;barchart.png&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Plot the bar chart </span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>barplot</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>H</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Save the file</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>dev</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>off</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>()</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute above code, it produces following result &#8722;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Times New Roman",serif'><img
+width=260 height=227 id="Picture 3" src="2_files/image001.jpg"
+alt="Bar Chart using R"></span></p>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:18.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'><br>
+</span><span style='font-size:14.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C;letter-spacing:-.75pt'>Bar Chart Labels, Title and Colors</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;text-align:justify;line-height:200%;border:none;padding:0cm'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#843C0C;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The
+features of the bar chart can be expanded by adding more parameters. The&nbsp;<b>main</b>&nbsp;parameter
+is used to add&nbsp;<b>title</b>. The&nbsp;<b>col</b>&nbsp;parameter is used to
+add colors to the bars. The&nbsp;<b>args.name</b>&nbsp;is a vector having same
+number of values as the input vector to describe the meaning of each bar.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:black'>Example</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;text-align:justify;line-height:200%'><span
+style='font-size:6.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The below
+script will create and save the bar chart in the current R working directory.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Create the data for the chart</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>H </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> c</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>7</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>12</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>28</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>41</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>M </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> c</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;Mar&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;Apr&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;May&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;Jun&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;Jul&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Give the chart file a name</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>png</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>file
+</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>&quot;barchart_months_revenue.png&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Plot the bar chart </span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>barplot</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>H</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>names</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>arg</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>M</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>xlab</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;Month&quot;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>    ,</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>ylab</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;Revenue&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>col</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;blue&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>main</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;Revenue
+chart&quot;</span><span style='font-size:8.0pt;line-height:200%;font-family:
+Consolas;color:#666600'>,</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>border</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;red&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Save the file</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>dev</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>off</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>()</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute above code, it produces following result &#8722;</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Times New Roman",serif'><img
+width=228 height=236 id="Picture 2" src="2_files/image002.jpg"
+alt="Bar Chart with title using R"></span></p>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%;
+border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>Group Bar Chart and Stacked Bar Chart</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:4.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>We can
+create bar chart with groups of bars and stacks in each bar by using a matrix
+as input values.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>More than
+two variables are represented as a matrix which is used to create the group bar
+chart and stacked bar chart.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+1.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Create the input vectors.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>colors </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> c</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;green&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;orange&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;brown&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>months </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> c</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;Mar&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;Apr&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;May&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;Jun&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;Jul&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>regions </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> c</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;East&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;West&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;North&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Create the matrix of the values.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#7F0055'>Values</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>&lt;-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+matrix</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>c</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>2</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>9</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>11</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>9</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>4</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>8</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>7</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>12</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>2</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>8</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>10</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>11</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>),</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+nrow </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+ncol </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+byrow </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> TRUE</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Give the chart file a name</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>png</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>file
+</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>&quot;barchart_stacked.png&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Create the bar chart</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>barplot</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>Values</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+main </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>&quot;total revenue&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+names</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>.</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>arg </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+months</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>,</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> xlab </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;month&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+ylab </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>&quot;revenue&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+col </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> colours</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Add the legend to the chart</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>legend</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;topleft&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+regions</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>,</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> cex </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>1.3</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+fill </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> colours</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#880000'># Save the file</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;text-align:justify;line-height:200%;background:#EEEEEE;
+border:none;padding:0cm'><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>dev</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>off</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>()</span></p>
+
+</div>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Times New Roman",serif'><img
+width=251 height=256 id="Picture 1" src="2_files/image003.jpg"
+alt=" Stacked Bar Chart using R"></span></p>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm'>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:200%;
+border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%'>&nbsp;</span></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

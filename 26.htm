@@ -1,0 +1,887 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:Mangal;
+	panose-1:2 4 5 3 5 2 3 3 2 2;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:11.0pt;
+	font-family:"Century",serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.Tutorial, li.Tutorial, div.Tutorial
+	{mso-style-name:Tutorial;
+	mso-style-link:"Tutorial Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:11.0pt;
+	font-family:"Verdana",sans-serif;}
+span.TutorialChar
+	{mso-style-name:"Tutorial Char";
+	mso-style-link:Tutorial;
+	font-family:"Verdana",sans-serif;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.pln
+	{mso-style-name:pln;}
+span.pun
+	{mso-style-name:pun;}
+span.str
+	{mso-style-name:str;}
+span.com
+	{mso-style-name:com;}
+span.typ
+	{mso-style-name:typ;}
+span.lit
+	{mso-style-name:lit;}
+span.kwd
+	{mso-style-name:kwd;}
+.MsoChpDefault
+	{font-family:"Century",serif;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The data
+is Relational database systems are stored in a normalized format. So, to carry
+out statistical computing we will need very advanced and complex Sql queries.
+But R can connect easily to many relational databases like MySql, Oracle, Sql
+server etc. and fetch records from them as a data frame. Once the data is
+available in the R environment, it becomes a normal R data set and can be
+manipulated or analyzed using all the powerful packages and functions.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>In this
+tutorial we will be using MySql as our reference database for connecting to R.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>RMySQL Package</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:6.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>R has a
+built-in package named &quot;RMySQL&quot; which provides native connectivity
+between with MySql database. You can install this package in the R environment
+using the following command.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>install</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>.</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>packages</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;RMySQL&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;line-height:200%;border:none;padding:0cm'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>Connecting R to MySql</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:6.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>Once the
+package is installed we create a connection object in R to connect to the
+database. It takes the username, password, database name and host name as
+input.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># Create a connection Object to MySQL database.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># We will connect to the sampel database named
+&quot;sakila&quot; that comes with MySql installation.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>mysqlconnection </span><span style='font-size:8.0pt;line-height:
+200%;font-family:Consolas;color:#666600'>=</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'> dbConnect</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>MySQL</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(),</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+user </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>'root'</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+password </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>''</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+dbname </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>'sakila'</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>   host </span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>'localhost'</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># List the tables available in this database.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'> dbListTables</span><span style='font-size:8.0pt;line-height:
+200%;font-family:Consolas;color:#666600'>(</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>mysqlconnection</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'> [1] &quot;actor&quot;                     
+&quot;actor_info&quot;                </span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'> [3] &quot;address&quot;                   
+&quot;category&quot;                  </span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'> [5] &quot;city&quot;                      
+&quot;country&quot;                   </span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'> [7] &quot;customer&quot;                  
+&quot;customer_list&quot;             </span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'> [9] &quot;film&quot;                      
+&quot;film_actor&quot;                </span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>[11] &quot;film_category&quot;             
+&quot;film_list&quot;                 </span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>[13] &quot;film_text&quot;                 
+&quot;inventory&quot;                 </span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>[15] &quot;language&quot;                  
+&quot;nicer_but_slower_film_list&quot;</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>[17] &quot;payment&quot;                   
+&quot;rental&quot;                    </span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>[19] &quot;sales_by_film_category&quot;    
+&quot;sales_by_store&quot;            </span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>[21] &quot;staff&quot;                     
+&quot;staff_list&quot;                </span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>[23] &quot;store&quot;                     </span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;line-height:200%;border:none;padding:0cm'><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#121214;
+letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>Querying the Tables</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>We can
+query the database tables in MySql using the function&nbsp;<b>dbSendQuery()</b>.
+The query gets executed in MySql and the result set is returned using the
+R&nbsp;<b>fetch()</b>&nbsp;function. Finally it is stored as a data frame in R.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+5.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># Query the &quot;actor&quot; tables to get all the rows.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>result </span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'> dbSendQuery</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>mysqlconnection</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;select
+* from actor&quot;</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># Store the result in a R data frame object. n = 5 is used to
+fetch first 5 rows.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>data</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>.</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>frame </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+fetch</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>result</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> n </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#000088'>print</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>data</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>.</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>fame</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>        actor_id   first_name    last_name         last_update</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>1        1         PENELOPE      GUINESS           2006-02-15
+04:34:33</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>2        2         NICK          WAHLBERG          2006-02-15
+04:34:33</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>3        3         ED            CHASE             2006-02-15
+04:34:33</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>4        4         JENNIFER      DAVIS             2006-02-15
+04:34:33</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>5        5         JOHNNY        LOLLOBRIGIDA      2006-02-15
+04:34:33</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;line-height:200%;border:none;padding:0cm'><span
+style='font-size:10.0pt;line-height:200%;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>Query with Filter Clause</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>We can
+pass any valid select query to get the result.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+6.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>result </span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'> dbSendQuery</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>mysqlconnection</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;select
+* from actor where last_name = 'TORN'&quot;</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># Fetch all the records(with n = -1) and store it as a data
+frame.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>data</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>.</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>frame </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+fetch</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'>result</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> n </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#000088'>print</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>data</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>When we
+execute the above code, it produces the following result &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>        actor_id    first_name     last_name         last_update</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>1        18         DAN            TORN              2006-02-15
+04:34:33</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>2        94         KENNETH        TORN              2006-02-15
+04:34:33</span></p>
+
+<p class=MsoNormal style='line-height:200%;background:#F1F1F1;border:none;
+padding:0cm'><span style='font-size:6.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>3       102         WALTER         TORN              2006-02-15
+04:34:33</span></p>
+
+</div>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:0cm;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:0cm;margin-bottom:2.4pt;
+margin-left:0cm;line-height:200%;border:none;padding:0cm'><span
+style='line-height:200%;font-family:"Verdana",sans-serif;color:#121214;
+letter-spacing:-.75pt'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>Updating Rows in the Tables</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:8.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>We can
+update the rows in a Mysql table by passing the update query to the
+dbSendQuery() function.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+5.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>dbSendQuery</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>mysqlconnection</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;update
+mtcars set disp = 168.5 where hp = 110&quot;</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>After
+executing the above code we can see the table updated in the MySql Environment.</span></p>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:2.4pt;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-bottom:7.2pt;text-align:justify;line-height:
+200%;border:none;padding:0cm'><span style='font-size:10.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>Inserting Data into the Tables</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:5.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>dbSendQuery</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>mysqlconnection</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>   </span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#008800'>&quot;insert into mtcars(row_names, mpg,
+cyl, disp, hp, drat, wt, qsec, vs, am, gear, carb)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#008800'>   values('New Mazda RX4 Wag', 21, 6, 168.5, 110, 3.9, 2.875,
+17.02, 0, 1, 4, 4)&quot;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>After
+executing the above code we can see the row inserted into the table in the
+MySql Environment.</span></p>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:2.4pt;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-bottom:7.2pt;text-align:justify;line-height:
+200%;border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>Creating Tables in MySql</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:7.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>We can
+create tables in the MySql using the function&nbsp;<b>dbWriteTable()</b>. It
+overwrites the table if it already exists and takes a data frame as input.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+4.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># Create the connection object to the database where we want to
+create the table.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>mysqlconnection </span><span style='font-size:8.0pt;line-height:
+200%;font-family:Consolas;color:#666600'>=</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'> dbConnect</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#7F0055'>MySQL</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>(),</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+user </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>'root'</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+password </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>''</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+dbname </span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#008800'>'sakila'</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>   host </span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>'localhost'</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># Use the R data frame &quot;mtcars&quot; to create the table in
+MySql.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#880000'># All the rows of mtcars are taken inot MySql.</span></p>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>dbWriteTable</span><span style='font-size:8.0pt;line-height:
+200%;font-family:Consolas;color:#666600'>(</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>mysqlconnection</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>&quot;mtcars&quot;</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+mtcars</span><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#666600'>[,</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> </span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>],</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'>
+overwrite </span><span style='font-size:8.0pt;line-height:200%;font-family:
+Consolas;color:#666600'>=</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#313131'> TRUE</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>After
+executing the above code we can see the table created in the MySql Environment.</span></p>
+
+<div style='border:none;border-top:solid windowtext 1.0pt;padding:1.0pt 0cm 0cm 0cm;
+margin-left:2.4pt;margin-right:2.4pt'>
+
+<p class=MsoNormal style='margin-bottom:7.2pt;text-align:justify;line-height:
+200%;border:none;padding:0cm'><span style='font-size:9.0pt;line-height:200%;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:14.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>Dropping Tables in MySql</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0cm;line-height:200%'><span style='font-size:6.0pt;
+line-height:200%;font-family:"Verdana",sans-serif;color:#843C0C;letter-spacing:
+-.75pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>We can
+drop the tables in MySql database passing the drop table statement into the
+dbSendQuery() in the same way we used it for querying data from tables.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+3.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>&nbsp;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
+7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
+padding:0cm'><span style='font-size:8.0pt;line-height:200%;font-family:Consolas;
+color:#313131'>dbSendQuery</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:8.0pt;
+line-height:200%;font-family:Consolas;color:#313131'>mysqlconnection</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#313131'> </span><span
+style='font-size:8.0pt;line-height:200%;font-family:Consolas;color:#008800'>'drop
+table if exists mtcars'</span><span style='font-size:8.0pt;line-height:200%;
+font-family:Consolas;color:#666600'>)</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
+margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
+10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>After
+executing the above code we can see the table is dropped in the MySql
+Environment.</span></p>
+
+<p class=MsoNormal style='line-height:200%'><span style='font-size:9.0pt;
+line-height:200%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
