@@ -120,7 +120,7 @@ Health Organization(WHO) provides reports on health and medical information in
 the form of CSV, txt and XML files. Using R programs, we can programmatically
 extract specific data from such websites. Some packages in R which are used to
 scrap data form the web are &#8722; &quot;RCurl&quot;,XML&quot;, and
-&quot;stringr&quot;. They are used to connect to the URL’s, identify required
+&quot;stringr&quot;. They are used to connect to the URLâ€™s, identify required
 links for the files and download them to the local environment.</span></p>
 
 <p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
@@ -140,7 +140,7 @@ color:#203864;letter-spacing:-.75pt'>&nbsp;</span></p>
 <p class=MsoNormal style='margin-top:0cm;margin-right:2.4pt;margin-bottom:7.2pt;
 margin-left:2.4pt;text-align:justify;line-height:200%'><span style='font-size:
 10.0pt;line-height:200%;font-family:"Verdana",sans-serif;color:black'>The
-following packages are required for processing the URL’s and links to the
+following packages are required for processing the URLâ€™s and links to the
 files. If they are not available in your R Environment, you can install them
 using following commands.</span></p>
 
@@ -282,12 +282,12 @@ color:#313131'>downloadcsv &lt;- function (mainurl,filename) {</span></p>
 <p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
 7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
 padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
-color:#313131'>   filedetails &lt;- str_c(mainurl,filename)</span></p>
+color:#313131'>Â Â  filedetails &lt;- str_c(mainurl,filename)</span></p>
 
 <p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
 7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
 padding:0cm'><span style='font-size:7.0pt;line-height:200%;font-family:Consolas;
-color:#313131'>   download.file(filedetails,filename)</span></p>
+color:#313131'>Â Â  download.file(filedetails,filename)</span></p>
 
 <p class=MsoNormal style='margin-top:11.25pt;margin-right:0cm;margin-bottom:
 7.5pt;margin-left:0cm;line-height:200%;background:#EEEEEE;border:none;
@@ -344,7 +344,7 @@ font-family:Consolas;color:#313131'>&quot;JCMB_2015.csv&quot;
 
 <p class=MsoNormal style='text-align:justify;line-height:200%;background:#F1F1F1;
 border:none;padding:0cm'><span style='font-size:7.0pt;line-height:200%;
-font-family:Consolas;color:#313131'>   &quot;JCMB_2015_Mar.csv&quot;</span></p>
+font-family:Consolas;color:#313131'>Â Â  &quot;JCMB_2015_Mar.csv&quot;</span></p>
 
 </div>
 
